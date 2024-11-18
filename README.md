@@ -121,7 +121,7 @@ And after 20+ button presses...
 
     ```java
     import java.awt.Image;
-    import javax.swing.JButton;
+    import javax.swing.JButton; // <--
     ```
 
     Similar to what we did for the image in step #3, declare an instance variable of type `JButton` (line 12) and then assign a value to that instance variable in the constructor method (line 22).
@@ -138,7 +138,7 @@ And after 20+ button presses...
 
         cookie1 = super.getImage("gbs/one cookie.png"); 
 
-        moreButton = new JButton("Moar PLZ!") // <--
+        moreButton = new JButton("Moar PLZ!"); // <--
         super.add(moreButton);
     }
     ```
@@ -168,7 +168,7 @@ And after 20+ button presses...
 
         cookie1 = super.getImage("gbs/one cookie.png"); 
 
-        moreButton = new JButton("Moar PLZ!")
+        moreButton = new JButton("Moar PLZ!");
         super.add(moreButton);
 
         howMany = 1; // <--
@@ -182,7 +182,7 @@ And after 20+ button presses...
         super.paintComponent(g);
         g.setColor(BLACK);
         g.drawImage(cookie1, 120, 80, this);
-        g.drawString(howMany+" Cookie!, 10, 40); // <--
+        g.drawString(howMany+" Cookie!", 10, 40); // <--
     }
     ```
 
@@ -222,7 +222,7 @@ And after 20+ button presses...
     public void actionPerformed(ActionEvent ae) {
         howMany += 1; // <--
 
-        super.repaint() // <--
+        super.repaint(); // <--
     }
     ```
 
@@ -233,7 +233,7 @@ And after 20+ button presses...
         super.paintComponent(g);
         g.setColor(BLACK);
         g.drawImage(cookie1, 120, 80, this);
-        g.drawString(howMany+" Cookie!, 10, 40); // <--
+        g.drawString(howMany+" Cookie!", 10, 40); // <--
     }
     ```
 
